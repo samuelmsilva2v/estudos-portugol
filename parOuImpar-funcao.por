@@ -1,19 +1,20 @@
-programa{
-	
-	funcao inicio(){
-		inteiro cont, t1, t2, t3
+programa{
+inteiro num
+cadeia res
+
+	funcao inicio(){
+		escreva("Digite um número para saber se é PAR ou ÍMPAR: ")
+		leia(num)
+
+		res = ParOuImpar(num)
+		escreva("O número ", num," é ", res)
+	}
+
+	funcao cadeia ParOuImpar(inteiro x){
+		se(num % 2 == 0){
+			retorne "PAR"
+		}senao retorne "ÍMPAR"
 		
-		t1 = 0
-		escreva(t1,"... ")
-		t2 = 1
-		escreva(t2,"... ")
-			
-		para(cont = 3; cont <= 15; cont += 1){
-			t3 = t1 + t2
-			escreva(t3,"... ")
-			t1 = t2
-			t2 = t3
-		}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -21,7 +22,7 @@ programa{
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 233; 
+ * @POSICAO-CURSOR = 298; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

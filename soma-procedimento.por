@@ -1,19 +1,14 @@
-programa{
+programa{
+inteiro x = 5, y = 3, result
 	
-	funcao inicio(){
-		inteiro cont, t1, t2, t3
-		
-		t1 = 0
-		escreva(t1,"... ")
-		t2 = 1
-		escreva(t2,"... ")
-			
-		para(cont = 3; cont <= 15; cont += 1){
-			t3 = t1 + t2
-			escreva(t3,"... ")
-			t1 = t2
-			t2 = t3
-		}
+	funcao soma(){
+	escreva("Recebi o valor: ", x)
+	escreva("\nRecebi o valor: ", y)
+	result = x + y	
+	}
+	funcao inicio(){
+		soma()
+		escreva("\nO valor da soma é: ", result)
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -21,7 +16,7 @@ programa{
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 233; 
+ * @POSICAO-CURSOR = 188; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
